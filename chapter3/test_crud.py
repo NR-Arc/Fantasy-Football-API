@@ -20,7 +20,6 @@ def db_session():
 def test_get_player(db_session):
     """Tests you can get the first player"""
     player = crud.get_player(db_session, player_id=1001)
-    assert player is not None
     assert player.player_id == 1001
 
 def test_get_players(db_session):
@@ -32,7 +31,6 @@ def test_get_players(db_session):
 def test_create_players_by_name(db_session):
     """Tests creating a player by name"""
     player = crud.create_player_by_name(db_session, first_name="Bryce", last_name="Young")
-    assert player is not None
     assert len(player) == 1
     assert player[0].first_name == "Bryce"
     assert player[0].last_name == "Young"

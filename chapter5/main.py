@@ -67,6 +67,10 @@ def read_players(skip: int = 0,
 
 
 @app.get("/v0/players/{player_id}", response_model=schemas.Player,
+          summary="Get one player using the Player ID, which is internal to SWC",
+        description="If you have an SWC Player ID of a player from another API call such as v0_get_players, you can call this API using the player ID", 
+        response_description="One NFL player",
+        operation_id="v0_get_players_by_player_id",
         tags=["player"])
 def read_player(player_id: int, 
                 db: Session = Depends(get_db)):

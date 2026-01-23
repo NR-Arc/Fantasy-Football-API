@@ -2,7 +2,7 @@ import httpx
 import swcpy.swc_config as config
 from .schemas import League, Team, Player, Performance
 from typing import List
-import backoff
+import backoff #installed the package
 import logging
 logger = logging.getLogger(__name__)
 

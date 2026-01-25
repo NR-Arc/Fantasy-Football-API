@@ -31,7 +31,7 @@ def test_list_leagues():
 def test_bulk_player_file_parquet(): 
     """Tests bulk player download through SDK - Parquet"""
 
-    config = SWCConfig(bulk_file_format = "parquet") 
+    config = SWCConfig(swc_base_url="http://0.0.0.0:8000",bulk_file_format = "parquet") 
     client = SWCClient(config)    
 
     player_file_parquet = client.get_bulk_player_file()

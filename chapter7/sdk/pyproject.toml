@@ -23,4 +23,5 @@ dependencies = [
        'backoff>=2.2.1',
        'pyarrow>=16.0',
        'python-dotenv',
+       'pandas>=2.0.0',
 ]

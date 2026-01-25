@@ -52,5 +52,4 @@ class SWCConfig:
 
     def __str__(self):
         """Stringify function to return contents of config object for logging"""
-        return f"{self.swc_base_url} {self.swc_backoff} 
-        {self.swc_backoff_max_time}  {self.swc_bulk_file_format}"
+        return f"{self.swc_base_url} {self.swc_backoff} {self.swc_backoff_max_time} {self.swc_bulk_file_format}"

@@ -16,7 +16,7 @@ class SWCConfig:
 
     def __init__(
         self,
-        swc_base_url: str = None,
+        swc_base_url: str = 'http://0.0.0.0:8000',
         backoff: bool = True,
         backoff_max_time: int = 30,
         bulk_file_format: str = "csv",

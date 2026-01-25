@@ -29,7 +29,7 @@ Typical usage example:
 
 """
 
-config = SWCConfig(backoff=False)
+config = SWCConfig(swc_base_url='http://0.0.0.0:8000', backoff=False)
 client = SWCClient(config)    
 
 def test_environment_variable():

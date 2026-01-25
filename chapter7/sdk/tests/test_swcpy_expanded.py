@@ -37,7 +37,7 @@ def test_environment_variable():
 
     # Retrieve the environment variable
     swc_base_url = os.getenv('SWC_API_BASE_URL')
-    swc_base_url="http://0.0.0.0:8000"
+    
     # Print the value of the environment variable
     print(f"API_BASE_URL: {swc_base_url}")
     # Check if the environment variable is set correctly

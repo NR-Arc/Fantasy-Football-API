@@ -23,8 +23,8 @@ We'll be deploying our application soon. Check back for the public API address.
 
 ## Getting Started
 
-Since all of the data is public, the SWC API doesn't require any authentication. 
-All of the the following data is available using GET endpoints that return 
+Since all data is public, the SWC API doesn't require authentication. 
+All of the following data is available using GET endpoints that return 
 JSON data.
 
 ### Analytics
@@ -68,5 +68,5 @@ with httpx.Client(base_url=self.swc_base_url) as client:
 
 ## Software Development Kit (SDK)
 
-If you are a Python user, you can usethe swcpy SDK to interact with our API.
+If you are a Python user, you can use the swcpy SDK to interact with our API.
 Full information is available [here](SDK/README.md).

@@ -69,4 +69,4 @@ with httpx.Client(base_url=self.swc_base_url) as client:
 ## Software Development Kit (SDK)
 
 If you are a Python user, you can use the swcpy SDK to interact with our API.
-Full information is available [here](SDK/README.md).
+Full information is available [here](main/sdk/README.md).
